@@ -1,0 +1,157 @@
+.login {
+  margin: 2.5vh 5vw;
+  display: flex;
+  background-color: #2ec4b6;
+  overflow: hidden;
+}
+.login p {
+  font-family: hoss-round, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #100c08;
+}
+.login h1, .login h2, .login h3, .login h3 {
+  font-family: fatfrank, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  width: 15vw;
+  position: relative;
+  top: 25%;
+  left: 27%;
+}
+
+.columnL h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 35%;
+  right: 5%;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.columnL {
+  width: 40vw;
+  background-image: url(blank-map.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.columnR {
+  padding: 30vh 10vw;
+  width: 30vw;
+  height: 100vh;
+}
+
+form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+  width: 25rem;
+}
+form ::-moz-placeholder {
+  font-family: hoss-round, sans-serif;
+}
+form ::placeholder {
+  font-family: hoss-round, sans-serif;
+}
+
+input[type=text] {
+  flex-grow: 2;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+
+#email:focus {
+  outline: none;
+}
+
+form:focus-within {
+  outline: 2px solid #ff9f1c;
+}
+
+#validate {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  background-position-y: center;
+  background-color: #f8f8f8;
+  background-image: url(arrow-forward.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.button-login {
+  padding: 5%;
+}
+.button-login button {
+  display: block;
+  font-family: hoss-round, sans-serif;
+  font-weight: bold;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  width: 20rem;
+  border-radius: 4px;
+  border-color: #f8f8f8;
+  background-color: #f9b351;
+  color: #100c08;
+}
+
+body {
+  width: 100vw;
+}
+
+.active-area {
+  width: 80vw;
+}
+
+.menu {
+  padding: 8rem 4rem;
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #2ec4b6;
+}
+.menu img {
+  display: inline;
+  height: 5%;
+}
+.menu a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-family: hoss-round, sans-serif;
+  font-weight: normal;
+  color: #100c08;
+}
+.menu h3 {
+  font-family: fatfrank, sans-serif;
+  letter-spacing: 1px;
+  font-size: 28px;
+  display: inline;
+  padding: 1rem;
+  position: relative;
+  bottom: 1%;
+  color: #f8f8f8;
+  mix-blend-mode: lighten;
+  opacity: 85%;
+}
+
+a:hover {
+  background-color: rgba(248, 248, 248, 0.3725490196);
+}
+
+.nav {
+  position: relative;
+  top: 40px;
+}/*# sourceMappingURL=styles.css.map */

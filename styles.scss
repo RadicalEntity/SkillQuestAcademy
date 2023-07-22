@@ -1,0 +1,175 @@
+//Color Palette
+$mainColor: #2ec4b6;
+$secondColor: #ff9f1c;
+$thirdColor: #e71d36;
+$backgroundColor: #f8f8f8;
+$textColor: #100c08;
+
+//Typography
+$bodyFont: hoss-round, sans-serif;
+$headingFont: fatfrank, sans-serif;
+
+//Login Page Styles
+.login {
+    margin: 2.5vh 5vw; 
+    display: flex;
+    background-color: $mainColor;
+    overflow: hidden;
+
+    p {
+        font-family: $bodyFont;
+        font-weight: 400;
+        font-style: normal;
+        color: $textColor;
+    }
+
+    h1, h2, h3, h3 {
+        font-family: $headingFont;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.logo {
+    width: 15vw;
+    position: relative;
+    top: 25%;
+    left: 27%;
+ }
+
+.columnL h2  {
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 35%;
+    right: 5%;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.columnL {
+    width: 40vw;
+    background-image: url(blank-map.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.columnR {
+    padding: 30vh 10vw;
+    width: 30vw;
+    height: 100vh;
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction:row;
+    border-radius: 4px;
+
+    width: 25rem;
+    ::placeholder {
+        font-family: $bodyFont;
+    }
+}
+
+input[type=text] {
+    flex-grow:2;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    padding: 10px 20px;
+    background-color: $backgroundColor;
+}
+  
+#email:focus {
+    outline: none;
+}
+  
+form:focus-within { 
+    outline: 2px solid $secondColor; 
+}
+
+#validate {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    background-position-y: center;
+    background-color: $backgroundColor;
+    background-image: url(arrow-forward.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.button-login {
+    padding: 5%;
+    button {
+        display: block;
+        font-family: $bodyFont;
+        font-weight: bold;
+        margin: .5rem;
+        padding: .75rem;
+        width: 20rem;
+        border-radius: 4px;
+        border-color:$backgroundColor;
+        $secondColor: #f9b351;
+        background-color: $secondColor;
+        color:$textColor
+    }
+}
+
+//Platform Styles
+body {
+    width: 100vw;   
+}
+
+.active-area {
+    width: 80vw;
+}
+
+.menu {
+    padding: 8rem 4rem;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    background-color: $mainColor;
+    
+    img {
+        display: inline;
+        height: 5%;
+    }
+
+    a {
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        text-decoration: none;
+        font-family: $bodyFont;
+        font-weight: normal;
+        color: $textColor;
+    }
+
+    h3 {
+        font-family: $headingFont;
+        letter-spacing: 1px;
+        font-size: 28px;
+        display: inline;
+        padding: 1rem;
+        position: relative;
+        bottom: 1%;
+        color: $backgroundColor;
+        mix-blend-mode: lighten;
+        opacity: 85%;
+    }
+}
+
+a:hover {
+    $backgroundColor: #f8f8f85f;
+    background-color: $backgroundColor;
+}
+
+.nav {
+    position: relative;
+    top: 40px;
+}
