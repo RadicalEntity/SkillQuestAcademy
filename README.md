@@ -23,7 +23,7 @@ Complete courses, earn points, and unlock badges as you progress.
 Engage with the community, join challenges, and showcase your skills.
 Earn college credits and take your learning to the next level!
 Installation
-To get started with SkillQuest, you don't need any installations or downloads. Simply visit our website www.skillquest.com from your preferred web browser, sign up, and begin your learning adventure!
+To get started with SkillQuest, you don't need any installations or downloads. Simply visit our website from your preferred web browser, sign up, and begin your learning adventure!
 
 
 Let the Quest for Knowledge Begin!
