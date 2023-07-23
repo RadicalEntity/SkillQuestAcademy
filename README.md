@@ -1,7 +1,7 @@
 # Welcome to SkillQuest!
 
 *Introduction* <br>
-SkillQuest is a gamified e-learning platform designed for students seeking an alternative and engaging way to pursue higher education. Our platform offers a diverse range of courses, and students can earn college credits upon successful completion. Whether you're a novice or tech enthusiast, SkillQuest welcomes learners of all ages to embark on a transformative learning experience.
+SkillQuest is a gamified e-learning platform designed for students seeking an alternative and engaging way to pursue higher education. Our platform offers a diverse range of courses, and students can earn college credits upon successful completion. Whether you're a novice or industry professional, SkillQuest welcomes learners of all ages to embark on a transformative learning experience.
 
 *Features* <br>
 Gamified Learning: Enjoy a fun and interactive learning experience with gamified elements that make the journey exciting and rewarding.
@@ -30,4 +30,4 @@ Let the Quest for Knowledge Begin!
 We invite you to embark on your SkillQuest journey and unleash your true potential. Happy learning, and may your quest for knowledge lead you to new horizons!
 
 
-Note: This ReadMe is for the Student-Level Hackathon and reflects a prototype version of SkillQuest. Some features may be subject to change and improvements as we continue our development journey.
+Note: This ReadMe is for the STEMist Hacks Hackathon and reflects a prototype version of SkillQuest. Some features may be subject to change and improvements as we continue our development journey.
