@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="interactive.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ztl5lqo.css">
+    <link rel="icon" type="image/x-icon" href="SkillQuest Logo.png">
+    <title>The Labyrinth</title>
+</head>
+<body>
+    <div class="menu collapse">
+        <button id="menu-icon" style="cursor: pointer;"></button>
+        <button id="profile" style="cursor: pointer;"></button>
+        <button id="mail" style="cursor: pointer;"></button>
+        <button id="notification" style="cursor: pointer;"></button>
+    </div>
+
+    <div class="active-area collapse">
+        <section class="lesson-header">
+            <h3>Introduction to Web Development</h3>
+            <button onclick="collapseV()"></button>
+        </section>
+        <h1>House of Web</h1>
+        <p> Welcome to the thrilling House of Web, a minigame that concludes our
+            Introduction to Web Development lesson. You'll navigate through a seemingly 
+            infinite number of floors, each randomly generated to test your knowledge 
+            of HTML, CSS, and JavaScript. As you progress through the House of Web, 
+            you'll encounter different floors, each representing one of the three topics. 
+            Get ready to face challenging questions related to HTML elements, CSS 
+            styling, and JavaScript concepts. But don't worry, it's all in good fun!
+        </p>
+        <p> Here's how it works: Once you enter a floor, a question will appear on the 
+            screen. Use your web development knowledge to answer correctly. If you get 
+            it right, you'll proceed to the next level, advancing further into the 
+            digital house. However, beware! If you answer incorrectly, you'll be 
+            dejected back to the start, just like in any quest. But don't let that 
+            discourage you; the House of Web is meant to challenge you, and it's a great 
+            opportunity to reinforce what you've learned.
+        </p>
+        <p> In total, there are 15 floors to conquer, so stay sharp and focused as you 
+            navigate through the halls of web development. Remember, every correct answer 
+            brings you closer to the end of the game, where you'll emerge as a confident 
+            and skilled web developer.
+        </p>
+        <p> Have fun exploring the House of Web, and don't forget to face each question 
+            with determination. You've got this!
+        </p>
+        <audio id="correctSound">
+            <source src="correct.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="wrongSound">
+            <source src="wrong.mp3" type="audio/mpeg">
+        </audio>
+        <div class="game-container">
+            <div class="stats">
+                <p id="level">Level 1</p>
+                <p id="score">Score 0</p>
+            </div>
+            <div class="question">
+                <p>Let's warm up with a practice question. Select the answer with the html element for a button.</p>
+                <form name="practice-question">
+                    <input type="radio" class="answer1" id="a" name="answer" value="0">
+                    <label class="answer1" for="answer1">h1</label>
+                    <input type="radio" class="answer2" id="b" name="answer"  value="0">
+                    <label class="answer2" for="answer2">p</label>
+                    <input type="radio" class="answer3" id="c" name="answer" value="1">
+                    <label class="answer3" for="answer3">button</label>
+                    <input type="radio" class="answer4" id="d" name="answer" value="0">
+                    <label class="answer4" for="answer4">img</label>
+                </form>
+                <button id="submit" onclick="return validateForm()">Check Answer</button> 
+            </div>
+        </div>
+        <button id="next-page" onclick="location.href='cs-course-page.html';">Next</button>
+</body>
+</html>

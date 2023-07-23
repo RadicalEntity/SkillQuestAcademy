@@ -10,7 +10,7 @@
   font-style: normal;
   color: #100c08;
 }
-.login h1, .login h2, .login h3, .login h3 {
+.login h1, .login h2 {
   font-family: fatfrank, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -108,10 +108,55 @@ form:focus-within {
 
 body {
   width: 100vw;
+  overflow-x: hidden;
+}
+
+#menu-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("menu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#profile {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("profile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#mail {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("new-mail.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#notification {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("notification.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .active-area {
   width: 80vw;
+  margin-left: 30vw;
+  margin-right: 10vw;
+  padding: 5rem;
 }
 
 .menu {
@@ -147,6 +192,51 @@ body {
   opacity: 85%;
 }
 
+.menu.collapse {
+  align-items: center;
+  width: 4rem;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #2ec4b6;
+  position: fixed;
+}
+.menu.collapse button {
+  margin: 1rem;
+}
+
+.active-area.collapse {
+  margin-left: 10vw;
+}
+.active-area.collapse h1 {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  padding: 0 10vw;
+}
+.active-area.collapse p {
+  padding: 1vh 10vw;
+}
+
+.lesson-header {
+  max-width: 80%;
+  display: flex;
+  margin: auto;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #100c08;
+  border-radius: 4px;
+}
+.lesson-header button {
+  position: relative;
+  right: -80%;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+}
+.lesson-header h3 {
+  font-size: 1rem;
+}
+
 a:hover {
   background-color: rgba(248, 248, 248, 0.3725490196);
 }
@@ -154,4 +244,102 @@ a:hover {
 .nav {
   position: relative;
   top: 40px;
+}
+
+.scroll-wrap {
+  max-height: 20rem;
+  display: flex;
+  overflow-x: auto;
+  width: 60vw;
+  padding-bottom: 10px;
+}
+
+.scroll-wrap::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.scroll-wrap::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f8f8f8;
+}
+
+.scroll-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ff9f1c;
+}
+
+.scroll-item {
+  min-width: 18rem;
+  height: 18rem;
+  line-height: 110px;
+  text-align: center;
+  background-color: #ddd;
+  margin-right: 2rem;
+  border-radius: 4px;
+}
+
+.game-container {
+  background-image: url(starting-bkgd.jpg);
+  background-position-y: -70px;
+  background-size: cover;
+  margin: auto;
+  margin-top: 5vh;
+  padding: 1rem;
+  width: 65vw;
+  height: 60vh;
+  border: 1px solid #100c08;
+}
+
+.stats {
+  display: flex;
+}
+.stats #level {
+  width: 5rem;
+  position: relative;
+  left: -150px;
+}
+.stats #score {
+  width: 5rem;
+  position: relative;
+  left: -450px;
+}
+
+.question {
+  background-color: rgba(248, 248, 248, 0.7);
+  display: grid;
+  grid-template-rows: auto auto auto;
+  position: relative;
+  top: 10vh;
+  left: 10vw;
+  width: 40vw;
+  border: 1px solid #100c08;
+  border-radius: 4px;
+  height: 40%;
+  padding-left: 50px;
+}
+.question p {
+  margin-left: -20%;
+  text-align: center;
+  width: 80%;
+}
+.question form {
+  display: grid;
+  grid-template-columns: 20px 400px 20px 400px;
+  grid-template-rows: 30px;
+  align-items: center;
+}
+
+.question form:focus-within {
+  outline: none;
+}
+
+#submit {
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  width: 10rem;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

@@ -7,10 +7,7 @@
     <script src="interactive.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/ztl5lqo.css">
     <link rel="icon" type="image/x-icon" href="SkillQuest Logo.png">
-    <link href="index.html">
-    <link href="skillquests.html">
-    <link href="courses.html">
-    <title>Dashbaord</title>
+    <title>Dashboard</title>
 </head>
 <body>
     <div class="menu">
@@ -23,11 +20,54 @@
             <a href="dashboard.html">Training</a>
             <a href="dashboard.html">Discussion</a>  
             <a href="index.html">Logout</a>  
-        </container>
+        </div>
     </div>
 
     <div class="active-area">
-        
+        <section class="profile-header">
+            <img>
+            <h4>Level 12 | Mage</h4>
+            <button id="mail" style="cursor: pointer;"></button>
+            <button id="notification" style="cursor: pointer;"></button>
+        </section>
+
+        <section class="my-dashboard">
+            <div>
+                <h1>Dashboard</h1>
+                <h2>Technology Specialist SkillQuest</h2p>
+                <p>0</p>
+                <img src="">
+                <p>N/A</p>
+                <img src="">
+            </div>
+            <container>
+                <div>
+                    <h3>Daily Task</h3>
+                    <p>Complete 3 lessons from any science or math course</p>
+                    <progress value="1" max="3"></progress>
+                </div>
+                <div>
+                    <h3>Daily Task</h3>
+                    <p>Earn 120XP from a Computer Science course</p>
+                    <progress value="15" max="120"></progress>
+                </div>
+                <div>
+                    <h3>Weekly Task</h3>
+                    <p>Earn 3 Celestial Credits</p>
+                    <progress value="2" max="3"></progress>
+                </div>
+            </container>
+        </section>
+
+        <section class="my-courses">
+            <h1>My Courses</h1>
+            <div class="scroll-wrap">
+                <div class="scroll-item" onclick="location.href='cs-course-page.html';" style="cursor: pointer;">Principles of Computer Science<progress value="80" max="100"></progress></div>
+                <div class="scroll-item">Environmental Science and Sustainability<progress value="15" max="100"></progress></div>
+                <div class="scroll-item">Introduction to  Philosophy<progress value="23" max="100"></progress></div>
+                <div class="scroll-item">IT Leadership Foundations<progress value="12" max="100"></progress></div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
