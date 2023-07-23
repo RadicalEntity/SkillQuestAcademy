@@ -17,8 +17,8 @@
         <button id="notification" style="cursor: pointer;"></button>
     </div>
 
-    <div class="active-area">
-        <container>
+    <div class="active-area collapse">
+        <div class="lesson-header">
             <section>
                 <h1>Introduction to Web Development</h1>
                 <h3>Key Concepts</h3>
@@ -34,80 +34,92 @@
                 </ul>
             </section>
             <section>
-                <h3>Side Quests</h2>
+                <h2>Side Quests</h2>
                     <div>
                         <p>Answer 7/7 practice questions</p>
-                        <progress value="0" max="7"></progress>
+                        <progress id="bar1" value="0" max="7"></progress>
                     </div>
                     <div>
                         <p>Earn 300XP</p>
-                        <progress value="0" max="300"></progress>
+                        <progress id="bar2" value="0" max="300"></progress>
                     </div>
                     <div>
                         <p>Get a score of 1000 or more</p>
                         <progress value="0" max="1000"></progress>
                     </div>
             </section>
-        </container>
+        </div>
 
-        <h2>Getting Started with Web Development: Essential Computer Setup</h2>
-        <p> When diving into the world of web development, setting up your computer 
-            with the right tools is crucial for a smooth and efficient workflow. In 
-            this article, we'll explore the essentials you need for a solid computer 
-            setup: a reliable browser, a capable text editor, and version control.
-        </p>
+        <section class="main-body">
+            <h2>Getting Started with Web Development: Essential Computer Setup</h2>
+            <p> When diving into the world of web development, setting up your computer 
+                with the right tools is crucial for a smooth and efficient workflow. In 
+                this article, we'll explore the essentials you need for a solid computer 
+                setup: a reliable browser, a capable text editor, and version control.
+            </p>
 
-        <h4>Browser: Your Window to the Web</h4>
-        <p>A web browser is your gateway to the internet and an indispensable tool for 
-            web development. While there are many browsers available, popular options 
-            like Google Chrome, Mozilla Firefox, and Microsoft Edge offer excellent 
-            support for modern web standards and developer tools. Choose the one that 
-            suits your preferences and start exploring the vast expanse of the internet.
-        </p>
+            <h4>Browser: Your Window to the Web</h4>
+            <p>A web browser is your gateway to the internet and an indispensable tool for 
+                web development. While there are many browsers available, popular options 
+                like Google Chrome, Mozilla Firefox, and Microsoft Edge offer excellent 
+                support for modern web standards and developer tools. Choose the one that 
+                suits your preferences and start exploring the vast expanse of the internet.
+            </p>
 
-        <h4>Text Editor: Crafting Code with Ease</h4>
-        <p> A text editor is where you'll write, edit, and organize your code. Unlike 
-            standard word processors, text editors are designed specifically for coding, 
-            offering features like syntax highlighting, auto-completion, and line 
-            numbering. Two popular text editors among developers are Visual Studio 
-            Code and Sublime Text. They are lightweight, highly customizable, and 
-            support a wide range of programming languages, including HTML, CSS, and 
-            JavaScript.
-        </p>
+            <h4>Text Editor: Crafting Code with Ease</h4>
+            <p> A text editor is where you'll write, edit, and organize your code. Unlike 
+                standard word processors, text editors are designed specifically for coding, 
+                offering features like syntax highlighting, auto-completion, and line 
+                numbering. Two popular text editors among developers are Visual Studio 
+                Code and Sublime Text. They are lightweight, highly customizable, and 
+                support a wide range of programming languages, including HTML, CSS, and 
+                JavaScript.
+            </p>
 
-        <h4>Version Control: Safeguarding Your Work</h4>
-        <p> Version control is a crucial aspect of web development, enabling you to 
-            track changes, collaborate with others, and revert to previous versions of 
-            your code. Git, a distributed version control system, is the go-to choice 
-            for developers. You can create repositories to store your projects, track 
-            changes, and easily collaborate with teammates through platforms like GitHub 
-            or GitLab.
-        </p>
+            <h4>Version Control: Safeguarding Your Work</h4>
+            <p> Version control is a crucial aspect of web development, enabling you to 
+                track changes, collaborate with others, and revert to previous versions of 
+                your code. Git, a distributed version control system, is the go-to choice 
+                for developers. You can create repositories to store your projects, track 
+                changes, and easily collaborate with teammates through platforms like GitHub 
+                or GitLab.
+            </p>
 
-        <p>
-            Setting up your computer with these essentials lays a strong foundation for 
-            your web development journey. As you gain experience, you may explore 
-            additional tools and software to enhance your workflow. Remember, keeping 
-            your setup simple and focused will enable you to concentrate on honing your 
-            coding skills and building amazing web projects.
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BvJYXl2ywUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
-        
-        <p> Which of the following tools is essential for web developers to track
-            collaborate with others, and manage their projects effectively?
-        </p>
-        <form name="practice-question" onsubmit="return validateForm()">
-            <input type="radio" id="answer1" name="answer" value="0">
-            <label for="answer1">Web Development</label>
-            <input type="radio" id="answer2" name="answer"  value="0">
-            <label for="answer2">Text Editor</label>
-            <input type="radio" id="answer3"  name="answer" value="0">
-            <label for="answer3">Integrated Development Environment</label>
-            <input type="radio" id="answer4" name="answer" value="1">
-            <label for="answer4">Version Control</label>
-            <input type="submit" value="Submit">
-        </form>
-        <button id="next-page"  onclick="location.href='minigame.html';">Next</button>
+            <p>
+                Setting up your computer with these essentials lays a strong foundation for 
+                your web development journey. As you gain experience, you may explore 
+                additional tools and software to enhance your workflow. Remember, keeping 
+                your setup simple and focused will enable you to concentrate on honing your 
+                coding skills and building amazing web projects.
+            </p>
+            <iframe width="650" height="400" src="https://www.youtube.com/embed/BvJYXl2ywUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+            
+            <div class="practice-question">
+                <p> Which of the following tools is essential for web developers to track
+                    collaborate with others, and manage their projects effectively?
+                </p>
+                <form name="question1">
+                    <input type="radio" id="answer1" name="answer" value="0">
+                    <label for="answer1">Web Development</label>
+                    <input type="radio" id="answer2" name="answer"  value="0">
+                    <label for="answer2">Text Editor</label>
+                    <input type="radio" id="answer3"  name="answer" value="0">
+                    <label for="answer3">Integrated Development Environment</label>
+                    <input type="radio" id="answer4" name="answer" value="1">
+                    <label for="answer4">Version Control</label>
+                    <input type="button" class="submit" value="Submit" onclick="changeBar();alert('You answered correct and gained 10XP!');">
+                </form>
+                <script>
+                    function changeBar() {
+                        let x = document.getElementById("bar2");
+                        x.setAttribute("value", 10);
+                        let y = document.getElementById("bar1")
+                        y.setAttribute("value", 1)
+                    }
+                </script> 
+            </div>    
+        </section>
+        <button id="next-page" style="cursor: pointer;" onclick="location.href='minigame.html';">Next</button>
     </div>
 </body>
 </html>

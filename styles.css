@@ -152,11 +152,117 @@ body {
   background-repeat: no-repeat;
 }
 
+#star, #credits {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 5px;
+  position: relative;
+  top: 10px;
+}
+
 .active-area {
   width: 80vw;
-  margin-left: 30vw;
+  margin-left: 27vw;
   margin-right: 10vw;
   padding: 5rem;
+}
+.active-area h1, .active-area h2, .active-area h3, .active-area h4 {
+  font-family: fatfrank, sans-serif;
+  letter-spacing: 1px;
+}
+.active-area p {
+  font-family: hoss-round, sans-serif;
+  font-size: 12px;
+}
+.active-area .course-page {
+  width: 60vw;
+}
+.active-area #mail {
+  position: relative;
+  left: 59%;
+  margin: 0 5px;
+}
+.active-area #notification {
+  margin: 0 5px;
+  position: relative;
+  left: 59%;
+}
+
+#cs-header {
+  background-color: rgba(255, 159, 28, 0.7);
+  background-blend-mode: screen;
+  width: 55vw;
+  align-items: center;
+  border: 1px solid #100c08;
+  border-radius: 4px;
+  padding: 2rem 3rem;
+  line-height: 1.5;
+}
+#cs-header section {
+  width: 50%;
+}
+
+.main-bar {
+  width: 300px;
+  height: 10px;
+}
+
+progress {
+  border-radius: 4px;
+  height: 5px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+  background-color: rgba(231, 29, 54, 0.7);
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 3px rgba(255, 159, 28, 0.1);
+}
+
+.my-dashboard {
+  background-color: #2ec4b6;
+  display: flex;
+  width: 55vw;
+  align-items: center;
+  border: 1px solid #100c08;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+.my-dashboard > div {
+  margin: 5% 2%;
+}
+.my-dashboard h1 {
+  color: #f8f8f8;
+}
+.my-dashboard h2 {
+  font-size: 1.1rem;
+  margin-bottom: -5px;
+}
+.my-dashboard h3 {
+  font-size: 1rem;
+}
+.my-dashboard p, .my-dashboard img {
+  align-content: center;
+  display: inline;
+}
+
+.side-quests {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+}
+.side-quests div {
+  background-color: rgba(248, 248, 248, 0.7);
+  padding: 1rem 2rem;
+  border: 3px solid #f8f8f8;
+  border-radius: 4px;
+  margin: 0 2%;
 }
 
 .menu {
@@ -192,6 +298,53 @@ body {
   opacity: 85%;
 }
 
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-header #profile {
+  margin-right: 20px;
+}
+
+#lesson-list {
+  padding: 3rem;
+}
+
+.lesson {
+  background-color: rgba(46, 196, 182, 0.7);
+  height: 50px;
+  border: 1px solid #100c08;
+  border-radius: 4px;
+  width: 55vw;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+}
+.lesson a {
+  text-decoration: none;
+  font-family: hoss-round, sans-serif;
+  font-size: 0.75rem;
+  color: #100c08;
+  padding: 10px 20px;
+}
+.lesson img {
+  height: 2rem;
+  position: relative;
+  top: 10px;
+}
+
+.undone {
+  background-color: rgba(255, 159, 28, 0.7);
+}
+.undone a {
+  position: relative;
+  top: 1rem;
+}
+
+.locked {
+  background-color: rgba(231, 29, 54, 0.7);
+}
+
 .menu.collapse {
   align-items: center;
   width: 4rem;
@@ -208,33 +361,103 @@ body {
 
 .active-area.collapse {
   margin-left: 10vw;
-}
-.active-area.collapse h1 {
-  margin-top: 5vh;
-  margin-bottom: 2vh;
-  padding: 0 10vw;
-}
-.active-area.collapse p {
-  padding: 1vh 10vw;
+  width: 75%;
 }
 
 .lesson-header {
-  max-width: 80%;
-  display: flex;
-  margin: auto;
-  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 159, 28, 0.7);
   border: 1px solid #100c08;
   border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  display: flex;
 }
-.lesson-header button {
-  position: relative;
-  right: -80%;
-  top: 1rem;
-  height: 20px;
-  width: 20px;
+.lesson-header section {
+  margin: 1rem 1.5rem;
+  padding: 0 50px;
 }
-.lesson-header h3 {
+.lesson-header ul {
+  font-family: hoss-round, sans-serif;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.lesson-header div {
+  background-color: rgba(46, 196, 182, 0.7);
+  border: 1px solid #100c08;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem;
+  width: 400px;
+  height: 60px;
+}
+.lesson-header h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.lesson-header progress {
+  border-radius: 4px;
+  height: 5px;
+  width: 400px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 0 10px;
+}
+
+.main-body {
+  width: 60%;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+.main-body p {
+  line-height: 1.5;
+}
+.main-body iframe {
+  margin-left: 3rem;
+  padding: 3rem;
+}
+.main-body h2 {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.practice-question {
+  background-color: rgba(255, 159, 28, 0.7);
+  border: 1px solid #100c08;
+  border-radius: 4px;
+  padding: 2rem 2.5rem;
+}
+.practice-question p {
   font-size: 1rem;
+}
+.practice-question form {
+  font-family: hoss-round, sans-serif;
+  font-size: 0.75rem;
+  width: 100%;
+  align-items: center;
+}
+.practice-question label {
+  margin: 1rem 1rem;
+}
+
+.submit {
+  position: relative;
+  top: 40px;
+  right: -10px;
+  border-radius: 2px;
+  border: 2px solid #f8f8f8;
+  padding: 0.5rem;
+}
+
+#next-page {
+  border-radius: 4px;
+  border: 1px solid #100c08;
+  padding: 1rem 2rem;
+  color: #f8f8f8;
+  font-family: fatfrank, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: rgba(231, 29, 54, 0.7);
+  position: relative;
+  left: 65vw;
+  margin: 2rem;
 }
 
 a:hover {
@@ -272,39 +495,74 @@ a:hover {
 }
 
 .scroll-item {
+  padding: 0.5rem 1rem;
   min-width: 18rem;
   height: 18rem;
   line-height: 110px;
   text-align: center;
-  background-color: #ddd;
+  background-color: #2ec4b6;
   margin-right: 2rem;
   border-radius: 4px;
+  font-family: hoss-round, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.my-courses {
+  margin-top: 5vh;
+}
+
+.game-header {
+  max-width: 80%;
+  display: flex;
+  margin: auto;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #100c08;
+  border-radius: 4px;
+  background-color: rgba(255, 159, 28, 0.7);
+}
+.game-header button {
+  position: relative;
+  right: -80%;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+}
+.game-header h3 {
+  font-size: 1rem;
+}
+.game-header + h1 {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  padding: 0 10vw;
+}
+.game-header ~ p {
+  padding: 1vh 10vw;
+  line-height: 1.5;
 }
 
 .game-container {
   background-image: url(starting-bkgd.jpg);
-  background-position-y: -70px;
   background-size: cover;
   margin: auto;
-  margin-top: 5vh;
+  margin-top: 10vh;
   padding: 1rem;
-  width: 65vw;
+  width: 60vw;
   height: 60vh;
-  border: 1px solid #100c08;
 }
 
 .stats {
+  color: #f8f8f8;
   display: flex;
 }
 .stats #level {
   width: 5rem;
-  position: relative;
-  left: -150px;
+  padding-left: 5rem;
+  font-size: 1rem;
 }
 .stats #score {
   width: 5rem;
-  position: relative;
-  left: -450px;
+  font-size: 1rem;
 }
 
 .question {
@@ -318,18 +576,22 @@ a:hover {
   border: 1px solid #100c08;
   border-radius: 4px;
   height: 40%;
-  padding-left: 50px;
 }
 .question p {
-  margin-left: -20%;
+  margin: auto;
+  padding: 2rem 0;
   text-align: center;
-  width: 80%;
+  width: 90%;
+  font-size: 1rem;
 }
 .question form {
   display: grid;
+  padding: 0 3rem;
   grid-template-columns: 20px 400px 20px 400px;
   grid-template-rows: 30px;
   align-items: center;
+  font-family: hoss-round, sans-serif;
+  font-size: 0.8rem;
 }
 
 .question form:focus-within {
@@ -342,4 +604,6 @@ a:hover {
   border-radius: 4px;
   width: 10rem;
   text-align: center;
+  padding: 0.5rem 2rem;
+  background-color: rgba(255, 159, 28, 0.5);
 }/*# sourceMappingURL=styles.css.map */

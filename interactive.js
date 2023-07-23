@@ -43,11 +43,12 @@ const jsQuestions = [
     ["Which event occurs when the user clicks on an HTML element?", "onmouseover", "onclick", "onchange", "onmouseclick", "b"]
 ];
 
-const questionFormat = document.querySelector(".question").innerHTML;
+let questionFormat = document.querySelector("div.game-container.question").innerHTML;
+
 function pickHTML() {
     let x = document.createElement("div");
     x.innerHTML = questionFormat;
-    document.querySelector(".stats").append(x);
+    document.querySelector(".stats").appendChild(x);
     document.querySelector(".question p").innerText = htmlQuestions[0][0];
     document.getElementById(".answer1 label").innerText = htmlQuestions[0][1];
     document.getElementById(".answer2 label").innerText = htmlQuestions[0][2];
@@ -58,7 +59,9 @@ function pickHTML() {
 } 
 
 function pickCSS() {
-    document.querySelector(".stats").append(questionFormat).innerHTML;
+    let x = document.createElement("div");
+    x.innerHTML = questionFormat;
+    document.querySelector(".stats").appendChild(x);
     document.querySelector(".question p").innerText = cssQuestions[1][0];
     document.getElementById(".answer1 label").innerText = cssQuestions[1][1];
     document.getElementById(".answer2 label").innerText = cssQuestions[1][2];
@@ -69,7 +72,9 @@ function pickCSS() {
 }
 
 function pickJS() {
-    document.querySelector(".stats").append(questionFormat).innerHTML;
+    let x = document.createElement("div");
+    x.innerHTML = questionFormat;
+    document.querySelector(".stats").appendChild(x);
     document.querySelector(".question p").innerText = jsQuestions[2][0];
     document.getElementById(".answer1 label").innerText = jsQuestions[2][1];
     document.getElementById(".answer2 label").innerText = jsQuestions[2][2];
@@ -176,13 +181,13 @@ function roomAnimation() {
         gameBackground.play();
         setTimeout(() => { generateRoom(); }, 5000);
     }
-    if (flag == 1) {
+    else if (flag == 1) {
         gameBackground.setAttribute("src", "css-room-leave.mp4");
         document.querySelector(".game-container").appendChild(gameBackground);
         gameBackground.play();
         setTimeout(() => { generateRoom(); }, 5000);
     }
-    if (flag == 2) {
+    else {
         gameBackground.setAttribute("src", "js-room-leave.mp4");
         document.querySelector(".game-container").appendChild(gameBackground);
         gameBackground.play();
@@ -190,17 +195,10 @@ function roomAnimation() {
     }
 }
 
-// function gameOver() {
-//     wrongSound.play();
-//     score = 0;
-//     level = 1;
-//     generateRoom();
-// }
-
-// function gameWon() {
-
-// }
-
-// while (level = 15) {
-//     gameWon();
-// }
+function gameOver() {
+    wrongSound.volume = .4;
+    wrongSound.play();
+    score = 0;
+    level = 1;
+    generateRoom();
+}

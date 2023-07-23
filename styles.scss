@@ -166,12 +166,116 @@ body {
     background-repeat: no-repeat;
 }
 
+#star, #credits {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+}
 
 .active-area {
     width: 80vw; 
-    margin-left: 30vw;
+    margin-left: 27vw;
     margin-right: 10vw;
     padding: 5rem;
+    h1, h2, h3, h4 {
+        font-family: $headingFont;
+        letter-spacing: 1px;
+    }
+    p {
+        font-family: $bodyFont;
+        font-size: 12px;
+    }
+    .course-page {
+        width: 60vw;
+    }
+    #mail {
+        position: relative;
+        left: 59%;
+        margin: 0 5px;
+    }
+    
+    #notification {
+        margin: 0 5px;
+        position: relative;
+        left: 59%;
+    }
+}
+
+#cs-header {
+    background-color: rgba($color: $secondColor, $alpha: .7);
+    background-blend-mode: screen;
+    width: 55vw;
+    align-items: center;
+    border: 1px solid $textColor;
+    border-radius: 4px;
+    padding: 2rem 3rem;
+    line-height: 1.5;
+    section {
+        width: 50%;
+    }
+}
+
+.main-bar {
+    width: 300px;
+    height: 10px;
+  }
+
+progress {
+    border-radius: 4px; 
+    height: 5px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+    margin: 15px 0;
+  }
+  progress::-webkit-progress-bar {
+    background-color: $backgroundColor;
+    border-radius: 4px;
+  }
+  progress::-webkit-progress-value {
+    background-color: (rgba($color: $thirdColor, $alpha: .7));
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 3px (rgba($color: $secondColor, $alpha: .1));
+  }
+
+.my-dashboard {
+    background-color: $mainColor;
+    display: flex;
+    width: 55vw;
+    align-items: center;
+    border: 1px solid $textColor;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    > div {
+        margin: 5% 2%;
+    }
+    h1 {
+        color: $backgroundColor;
+    }
+    h2 {
+        font-size: 1.1rem;
+        margin-bottom: -5px;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p, img {
+        align-content: center;
+        display: inline;
+    }
+}
+
+.side-quests {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    div {
+        background-color: (rgba($color: $backgroundColor, $alpha: .7));
+        padding: 1rem 2rem;
+        border: 3px solid $backgroundColor;
+        border-radius: 4px;
+        margin: 0 2%;
+    }
 }
 
 .menu {
@@ -208,6 +312,55 @@ body {
         mix-blend-mode: lighten;
         opacity: 85%;
     }
+    
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-header #profile {
+    margin-right: 20px;
+}
+
+#lesson-list {
+    padding: 3rem;
+}
+
+.lesson {
+    background-color: rgba($color: $mainColor, $alpha: .7);
+    height: 50px;
+    border: 1px solid $textColor;
+    border-radius: 4px;
+    width: 55vw;
+    margin: 1.5rem 0;
+    padding: .5rem 1rem;
+    a {
+        text-decoration: none;
+        font-family: $bodyFont;
+        font-size: .75rem;
+        color: $textColor;
+        padding: 10px 20px;
+    }
+    img {
+        height: 2rem;
+        position: relative;
+        top: 10px;
+    }
+}
+
+.undone {
+    background-color: rgba($color: $secondColor, $alpha: .7);
+    a {
+        position: relative;
+        top: 1rem
+        
+    }
+}
+
+.locked {
+    background-color: rgba($color: $thirdColor, $alpha: .7);
 }
 
 .menu.collapse {
@@ -229,34 +382,104 @@ body {
     @if $margin == 20vw {
         margin-left: 10vw;
     }
-    h1 {
-        margin-top: 5vh;
-        margin-bottom: 2vh;
-        padding: 0 10vw;
-    }
-
-    p {
-        padding: 1vh 10vw;
-    }
+    width: 75%;
+    
 }
 
 .lesson-header {
-    max-width: 80%;
-    display: flex;
-    margin: auto;
-    padding: .5rem 1.5rem;
+    background-color: rgba($color: $secondColor, $alpha: .7);
     border: 1px solid $textColor;
     border-radius: 4px;
-    button {
-        position: relative;
-        right: -80%;
-        top: 1rem;
-        height: 20px;
-        width: 20px;
+    padding: .5rem 1.5rem;
+    display: flex;
+    section {
+        margin: 1rem 1.5rem;
+        padding: 0 50px;
     }
-    h3 {
-        font-size: 1rem;
+    ul {
+        font-family: $bodyFont;
+        font-size: .9rem;
+        line-height: 2;
     }
+    div {
+        background-color: rgba($color: $mainColor, $alpha: .7);
+        border: 1px solid $textColor;
+        border-radius: 4px;
+        padding: .5rem 1.5rem;
+        margin: 1rem;
+        width: 400px;  
+        height: 60px; 
+    }
+    h2 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    progress {
+        border-radius: 4px; 
+        height: 5px;
+        width: 400px;
+        box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+        margin: 0 0 10px;
+      }
+}
+
+.main-body {
+    width: 60%;
+    margin: auto;
+    padding: 3rem 2rem;
+    p {
+        line-height: 1.5;
+    }
+    iframe {
+        margin-left: 3rem;
+        padding: 3rem;
+    }
+    h2 {
+        text-align: center;
+        margin: 4rem 0;
+    }
+}
+
+.practice-question {
+    background-color: rgba($color: $secondColor, $alpha: .7);
+    border: 1px solid $textColor;
+    border-radius: 4px;
+    padding: 2rem 2.5rem;
+    p {
+          font-size: 1rem;
+    }
+    form {
+        font-family: $bodyFont;
+        font-size: .75rem;
+        width: 100%;
+        align-items: center;
+    }
+     label {
+         margin: 1rem 1rem;
+     }
+}
+
+.submit {
+    position: relative;
+    top: 40px;
+    right: -10px;
+    border-radius: 2px;
+    border: 2px solid $backgroundColor;
+    padding: .5rem;
+}
+
+#next-page {
+    border-radius: 4px;
+    border: 1px solid $textColor;
+    padding: 1rem 2rem;
+    color: $backgroundColor;
+    font-family: $headingFont;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: rgba($color: $thirdColor, $alpha: .7);
+    position: relative;
+    left: 65vw;
+    margin: 2rem;
 }
 
 a:hover {
@@ -295,38 +518,72 @@ a:hover {
   }
 
 .scroll-item {
+    padding: .5rem 1rem;
     min-width: 18rem;
     height: 18rem;
     line-height: 110px;
     text-align: center;
-    background-color: #ddd;
+    background-color: $mainColor;
     margin-right: 2rem;
     border-radius: 4px;
+    font-family: $bodyFont;
+    font-weight: bold;
+    font-size: 14px;
+}
+.my-courses {
+    margin-top: 5vh;
+}
+
+.game-header {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+    padding: .5rem 1.5rem;
+    border: 1px solid $textColor;
+    border-radius: 4px;
+    background-color: rgba($color: $secondColor, $alpha: .7);
+    button {
+        position: relative;
+        right: -80%;
+        top: 1rem;
+        height: 20px;
+        width: 20px;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    + h1 {
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        padding: 0 10vw;
+    }
+    ~ p {
+        padding: 1vh 10vw;
+        line-height: 1.5;
+    }
 }
 
 .game-container {
     background-image: url(starting-bkgd.jpg);
-    background-position-y: -70px ;
     background-size: cover;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     padding: 1rem;
-    width: 65vw;
+    width: 60vw;
     height: 60vh;
-    border: 1px solid $textColor;
 }
 
 .stats {
+    color: $backgroundColor;
     display: flex;
     #level {
         width: 5rem;
-        position: relative;
-        left: -150px;
+        padding-left: 5rem;
+        font-size: 1rem;
     }
     #score {
         width: 5rem;
-        position: relative;
-        left: -450px;
+        font-size: 1rem;
     }
 }
 
@@ -341,18 +598,22 @@ a:hover {
     border: 1px solid $textColor;
     border-radius: 4px ;
     height: 40%;
-    padding-left: 50px;
     p {
-        margin-left: -20%;
+        margin: auto;
+        padding: 2rem 0;
         text-align: center;
-        width: 80%;
+        width: 90%;
+        font-size: 1rem;
     }
 
     form {
         display: grid;
+        padding: 0 3rem;
         grid-template-columns: 20px 400px 20px 400px;
         grid-template-rows: 30px;
         align-items: center;
+        font-family: $bodyFont;
+        font-size: .8rem;
     }
 }
 
@@ -366,4 +627,6 @@ a:hover {
     border-radius: 4px;
     width: 10rem;
     text-align: center;
+    padding: .5rem 2rem;
+    background-color: rgba($color: $secondColor, $alpha: .5);
 }

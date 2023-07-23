@@ -15,8 +15,8 @@
         <h3>SkillQuest Academy</h3>
         <div class="nav">
             <a href="dashboard.html">Home</a>
-            <a href="skillquests.html">SkillQuests</a>
-            <a href="courses.html">Course Catalog</a>
+            <a href="dashboard.html">SkillQuests</a>
+            <a href="dashboard.html">Course Catalog</a>
             <a href="dashboard.html">Training</a>
             <a href="dashboard.html">Discussion</a>  
             <a href="index.html">Logout</a>  
@@ -25,7 +25,7 @@
 
     <div class="active-area">
         <section class="profile-header">
-            <img>
+            <button id="profile" style="cursor: pointer;"></button>
             <h4>Level 12 | Mage</h4>
             <button id="mail" style="cursor: pointer;"></button>
             <button id="notification" style="cursor: pointer;"></button>
@@ -34,16 +34,17 @@
         <section class="my-dashboard">
             <div>
                 <h1>Dashboard</h1>
-                <h2>Technology Specialist SkillQuest</h2p>
+                <h2>Technology Specialist SkillQuest</h2>
+                <progress class="main-bar" value="5" max="100"></progress><br>
                 <p>0</p>
-                <img src="">
+                <img id="star" src="star.svg">
                 <p>N/A</p>
-                <img src="">
+                <img id="credits" src="grad-cap.svg">
             </div>
-            <container>
+            <div class="side-quests">
                 <div>
                     <h3>Daily Task</h3>
-                    <p>Complete 3 lessons from any science or math course</p>
+                    <p>Complete 3 lessons from any Science or Math course</p>
                     <progress value="1" max="3"></progress>
                 </div>
                 <div>
@@ -56,7 +57,7 @@
                     <p>Earn 3 Celestial Credits</p>
                     <progress value="2" max="3"></progress>
                 </div>
-            </container>
+            </div>
         </section>
 
         <section class="my-courses">
