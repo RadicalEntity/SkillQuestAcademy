@@ -599,6 +599,7 @@ a:hover {
 }
 
 #submit {
+  font-family: hoss-round, sans-serif;
   margin: auto;
   margin-bottom: 2rem;
   border-radius: 4px;
